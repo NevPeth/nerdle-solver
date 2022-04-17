@@ -29,18 +29,6 @@ def check(string):
             return True
     return False
 
-def okGuess():
-    global sortedList
-    for i in range(len(sortedList)):
-        c1 = sortedList[i][0]
-        c2 = sortedList[i][1]
-        c3 = sortedList[i][2]
-        c4 = sortedList[i][3]
-        c5 = sortedList[i][4]
-        if(c1!=c2 and c1!=c3 and c1!=c4 and c1!=c5 and c2!=c3 and c2!=c4 and c2!=c5 and c3!=c4 and c3!=c5 and c4!=c5):
-            return sortedList[i]
-    return sortedList[0]
-
 def sortListFunc(isAfter, s, wordList):
     global includeList
     global guess
